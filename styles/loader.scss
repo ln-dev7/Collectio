@@ -1,0 +1,69 @@
+.loader{
+    background: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    &-bloc{
+        position: fixed;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background: $dark;
+        z-index: 1000;
+    }
+    &-left{
+        left: 0;
+    }
+    &-right{
+        right: 0;
+    }
+    &-load{
+        width: 540px;
+        max-width: 90%;
+        z-index: 2000;
+        p{
+            font-family: 'against', sans-serif;
+            font-size: 2rem;
+            color: $white;
+            text-align: center;
+        }
+        div{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                font-family: 'against', sans-serif;
+                color: $white;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.loader-end {
+    visibility: hidden;
+}
+
+.loader-end .loader-load{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.loader-end .loader-left{
+    transform: translateX(-100%);
+    transition: all 0.7s .3s ease-in-out;
+}
+
+.loader-end .loader-right{
+    transform: translateX(100%);
+    transition: all 0.7s .3s ease-in-out;
+}

@@ -1,16 +1,11 @@
 // Google font
-@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Poppins:wght@300&display=swap');
-
-@font-face {
-  font-family: 'mattone';
-  src: url('fonts/Mattone-150.woff2') format('woff2'),
-    url('fonts/Mattone-150.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('http://fonts.cdnfonts.com/css/against-2');
+// font-family: 'against', sans-serif; - Titre
+// font-family: 'Satoshi', sans-serif; - Texte
 
 // Couleurs
 $dark: #000;
+$white: #FFF;
 $secondary: #E7E2DC;
 $primary: #D7CCBF;
 $default: #EEEEEE;
@@ -19,8 +14,8 @@ $default: #EEEEEE;
 ::before,
 ::after {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  color: #000;
+  font-family: 'Satoshi', sans-serif;
+  color: $dark;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -38,7 +33,7 @@ li {
 
 body {
   min-height: 100vh;
-  background: $primary;
+  background: $white;
 
   &::-webkit-scrollbar {
     display: none;
