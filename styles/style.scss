@@ -1,2 +1,40 @@
 @import 'settings';
-@import 'loader'
+@import 'loader';
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+    background: $white;
+    .center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        gap: 30px;
+    }
+    &-images{
+        width: calc(100%/3);
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

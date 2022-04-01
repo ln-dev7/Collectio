@@ -14,7 +14,7 @@ $default: #EEEEEE;
 ::before,
 ::after {
   box-sizing: border-box;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'against', sans-serif;
   color: $dark;
   font-weight: 300;
   margin: 0;
@@ -33,9 +33,13 @@ li {
 
 body {
   min-height: 100vh;
-  background: $white;
+  background: #FFF;
 
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+img{
+  cursor: pointer;
 }
