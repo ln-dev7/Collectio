@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
       clearInterval(interval);
       document.querySelector(".loader").classList.add("loader-end");
     }
-  }, 0.0);
+  }, 100);
 });
 
 // Menu Burger
@@ -77,3 +77,4 @@ class Parallax {
 }
 
 Parallax.bind();
+
