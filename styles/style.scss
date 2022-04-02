@@ -71,6 +71,7 @@
                 font-size: 3.5rem;
                 color:  rgba($color: $white, $alpha: .5);
                 transition: .3s ease;
+                text-align: center;
             }
             &:hover{
                 span{
@@ -122,6 +123,45 @@
             transform: translate(-50%, -50%);
             font-size: 4rem;
             //z-index: 5;
+        }
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .menu{
+        &-container{
+            li{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container{
+        .center{
+            display: flex;
+            flex-direction: column;
+        }
+        &-images{
+            width: 100%;
+        }
+        &-center{
+            order: -1;
+        }
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .menu{
+        &-container{
+            li{
+                h1{
+                    font-size: 1.4rem;
+                }
+            }
         }
     }
 }

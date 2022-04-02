@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
             clearInterval(interval)
             document.querySelector('.loader').classList.add('loader-end');
         }
-    }, .1)
+    }, 100)
 })
 
 // Menu Burger
